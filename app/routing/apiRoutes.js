@@ -5,5 +5,28 @@
 
 
 
+        let employees = require('../data/employee.js');
 
         
+        module.exports = function (app) {
+        
+          /**
+           * GET the employees
+           */
+          app.get('/api/employees', function (req, res) {
+            res.json(employees);
+          });
+        
+                  
+          /**
+           * If there are fewer than 5 reservations, add the new reservation to the tablelist
+           * Otherwise add the new reservation to the waitlist
+           */
+          app.post('/api/employees', function (req, res) {
+                employees.push(req.body);
+                 res.end();
+          });
+
+      
+        }
+               

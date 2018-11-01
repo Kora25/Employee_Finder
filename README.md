@@ -3,7 +3,7 @@ A compatibility-based "EmployeeFinder" application. This full-stack site will ta
 
 
 **MVP (  ):**
-1. A responsive site that displays 10 survey questions.
+1. Displays 10 survey questions and capture user responses.
 2. Determine the user's most compatible employee and display the survey result.
 3. Deploy project to Heroku. 
 
