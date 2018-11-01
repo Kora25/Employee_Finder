@@ -11,7 +11,10 @@ const path = require("path");
 
 // Defines a PORT for the server to listen for requests
 // Normal post is 8080, but I am not able to use that port on my PC
-const PORT = 9080;
+
+// const PORT = 9080;
+
+var PORT = process.env.PORT || 9090;
 
 // Sets up our server to parse our request body for usage
 app.use(express.urlencoded({ extended: true }));
