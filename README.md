@@ -10,10 +10,8 @@ A compatibility-based "EmployeeFinder" application. This full-stack site will ta
 
 **Issues / Solutions:**
 
-1. Issue 1
+1. Validation on the survey questions.
 
+2. Saving survey record. 
 
-2. Issue 2
-
-
-3. Issue 3
+3. Displaying survey result in a Modal.
