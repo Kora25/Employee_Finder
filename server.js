@@ -3,10 +3,10 @@
 
 // Imports express into our app and sets it up for use
 const express = require('express');
-const app = express();
 const path = require("path");
 
 
+const app = express();
 
 
 // Defines a PORT for the server to listen for requests
@@ -20,6 +20,7 @@ var PORT = process.env.PORT || 9090;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// Sets our server to use the public directory for static assets
 app.use(express.static(path.join(__dirname, "./public")));
 
 // Routes

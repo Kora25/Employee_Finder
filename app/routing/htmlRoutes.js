@@ -1,13 +1,21 @@
-const path = require("path");
-// 3. Your `htmlRoutes.js` file should include two routes:
 
+// 3. Your `htmlRoutes.js` file should include two routes:
 // * A GET Route to `/survey` which should display the survey page.
 // * A default, catch-all route that leads to `home.html` which displays the home page. 
 
+// ===============================================================================
+
+// DEPENDENCIES
+// We need to include the path package to get the correct file path for our html
+
+const path = require("path");
+
+
 // ROUTES
-//let waitingList = require('../data/waiting-list.js');
 
 module.exports = function (app) {
+  // HTML GET Requests
+  // Below code handles when users 'visit' a page.
   app.get('/home', function (request, response) {
     response.sendFile(path.join(__dirname, '../public/home.html'));
   });
