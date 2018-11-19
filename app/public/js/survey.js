@@ -1,5 +1,32 @@
 $(function () {
+  const validateForm = function () {
+    let isValid = true;
 
+    console.log(isValid)
+    
+    // Using jQuery's each method, loop through the inputs
+    // Sets isValid to false if any are empty
+    $('input').each(function() {
+      if (!$(this).val()) {
+        isValid = false;
+      }
+    });
+
+    // Using jQuery's each method, loop through the select elements
+    // Sets isValid to false if any are unchosen
+    $('.custom-select').each(function(i, element) {
+      if (!$(this).val()) {
+        isValid = false;
+      }
+    });
+
+    return isValid;
+
+    console.log(isValid)
+  }
+
+
+  console.log("I am in Survey.js")
 
   const displayModal = function (data) {
 
@@ -20,10 +47,13 @@ $(function () {
    */
   const addSurvey = function (event) {
     event.preventDefault();
-
+    
     console.log("I am in Survey")
 
-    // Here we grab the form elements
+     // If all required fields are filled
+     if (validateForm()) {
+
+      // Create an object for the user's data
     const newSurvey = {
       name: $('#nameInput1').val().trim(),
       photo: $('#photoImage').val().trim(),
@@ -56,15 +86,25 @@ $(function () {
     // $('#Quest10').val()
 
 
-    $.ajax({
-      method: 'POST',
-      url: 'api/employees',
-      data: newSurvey
-    })
+// AJAX post the data to the employees API.
+$.post('/api/employees', newSurvey, displayModal);
+
+
+    // $.ajax({
+    //   method: 'POST',
+    //   url: 'api/employees',
+    //   data: newSurvey
+    // })
+  } else {
+
+    // Display an error alert if the form is not valid
+    $('#error')
+      .text('Please fill out all fields before submitting!')
+      .addClass('alert alert-danger');
   }
+}
 
 
-
-  $('#submit').on('click', addSurvey)
+  $('#btnSubmit').on('click', addSurvey)
 });
 
