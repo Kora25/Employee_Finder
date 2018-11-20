@@ -29,13 +29,14 @@ $(function () {
   console.log("I am in Survey.js")
 
   const displayModal = function (data) {
+    console.log(data, "this is the data from the backend");
 
     // Grab the result from the AJAX post so that the best match's name and photo are displayed.
     $('#match-name').text(data.name);
     $('#match-img').attr('src', data.photo);
 
     // Show the modal with the best match
-    $('#results-modal').modal('toggle');
+    $('#results-modal').modal('show');
   }
 
 
@@ -58,18 +59,20 @@ $(function () {
       name: $('#nameInput1').val().trim(),
       photo: $('#photoImage').val().trim(),
       scores: [
-        $('#Quest1').val().trim(),
-        $('#Quest2').val().trim(),
-        $('#Quest3').val().trim(),
-        $('#Quest4').val().trim(),
-        $('#Quest5').val().trim(),
-        $('#Quest6').val().trim(),
-        $('#Quest7').val().trim(),
-        $('#Quest8').val().trim(),
-        $('#Quest9').val().trim(),
-        $('#Quest10').val().trim()
+        $('#quest1').val().trim(),
+        $('#quest2').val().trim(),
+        $('#quest3').val().trim(),
+        $('#quest4').val().trim(),
+        $('#quest5').val().trim(),
+        $('#quest6').val().trim(),
+        $('#quest7').val().trim(),
+        $('#quest8').val().trim(),
+        $('#quest9').val().trim(),
+        $('#quest10').val().trim()
       ]
     };
+
+    console.log(newSurvey, " this is a new survey");
 
     // // Clear the form when submitting
     // $('#nameInput1').val('');

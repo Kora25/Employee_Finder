@@ -24,10 +24,31 @@ module.exports = function (app) {
    * 
    */
   app.post('/api/employees', function (req, res) {
+    const newEmployee = req.body;
+    let lowestDiff = null;
+    let bestMatch = null;
+
+    //loop through each employee record
+    employees.forEach(employee => {
+          let totalDiff = 0;
+
+          //loop through the score for that employee record
+          employee.scores.forEach((score, i )=> {
+              let diff = score - newEmployee.scores[i];
+              totalDiff += Math.abs(diff);
+          })
+
+          //compare the scores and save the lowestdiff
+          if(totalDiff < lowestDiff || lowestDiff == null ){
+              lowestDiff = totalDiff;
+              bestMatch = employee;
+          }
+      
+    });
     
     employees.push(req.body);
    
-    res.end();
+    res.send(bestMatch);
     
 
   });

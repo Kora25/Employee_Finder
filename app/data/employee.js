@@ -102,6 +102,22 @@ var surveyArray = [
             4,
             5
         ]
+    },
+    {
+        name: "Alvaro Martinez",
+        photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/1200px-Grosser_Panda.JPG',
+        scores: [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+        ]
     }
 
 
