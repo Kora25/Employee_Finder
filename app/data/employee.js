@@ -4,7 +4,7 @@
 var surveyArray = [
     {
         name: "Ahmed",
-        photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        photo: "https://www2.isye.gatech.edu/people/faculty/Shabbir_Ahmed/Shabbir-Ahmed-2013-d.jpg",
         scores: [
             5,
             1,
@@ -21,7 +21,7 @@ var surveyArray = [
 
     {
         name: "Jacob Deming",
-        photo: "https://pbs.twimg.com/profile_images/691785039043022849/oWsy8LNR.jpg",
+        photo: "https://resizing.flixster.com/oJ25LOxXCBuvm_9qq6jcp2KX1cw=/540x720/v1.bjs3ODk5MDA7ajsxNzg3NDsxMjAwOzU0MDs3MjA",
         scores: [
             4,
             2,
@@ -38,7 +38,7 @@ var surveyArray = [
 
     {
         name: "Jeremiah Scanlon",
-        photo: "https://avatars2.githubusercontent.com/u/8504998?v=3&s=460",
+        photo: "https://cuse.com/images/2016/11/16//Cook_Kramer2016.jpg?width=300",
         scores: [
             5,
             2,
@@ -55,7 +55,7 @@ var surveyArray = [
 
     {
         name: "Louis T. Delia",
-        photo: "https://pbs.twimg.com/profile_images/639214960049000449/lNCRC-ub.jpg",
+        photo: "https://avatars2.githubusercontent.com/u/8504998?v=3&s=460",
         scores: [
             3,
             3,
@@ -72,7 +72,7 @@ var surveyArray = [
 
     {
         name: "Lou Ritter",
-        photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAkDAAAAJDhhZTI5NTk2LWQzZjUtNDJjZi1hMTM2LTQ3ZjNmYjE0YmY2NA.jpg",
+        photo: "https://my.clevelandclinic.org/provider/image?id=20705&width=235",
         scores: [
             4,
             3,
@@ -89,7 +89,7 @@ var surveyArray = [
 
     {
         name: "Jordan Biason",
-        photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAisAAAAJGUxYzc4YzA0LWQxMzUtNGI4NS04YTFiLTkwYzM0YTZkNzA2NA.jpg",
+        photo: "https://avatars0.githubusercontent.com/u/16859670?s=460&v=4",
         scores: [
             4,
             4,
@@ -105,7 +105,7 @@ var surveyArray = [
     },
     {
         name: "Alvaro Martinez",
-        photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/1200px-Grosser_Panda.JPG',
+        photo: "http://s.doctoroz.com/styles/720x480/s3/sites/default/files/media/image_thumb/adrian-martinez-gallery.jpg?itok\u003dkEqo-sTL",
         scores: [
             1,
             1,
