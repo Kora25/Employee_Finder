@@ -2,7 +2,6 @@ $(function () {
   const validateForm = function () {
     let isValid = true;
 
-    console.log(isValid)
     
     // Using jQuery's each method, loop through the inputs
     // Sets isValid to false if any are empty
@@ -22,14 +21,11 @@ $(function () {
 
     return isValid;
 
-    console.log(isValid)
   }
 
 
-  console.log("I am in Survey.js")
 
   const displayModal = function (data) {
-    console.log(data, "this is the data from the backend");
 
     // Grab the result from the AJAX post so that the best match's name and photo are displayed.
     $('#match-name').text(data.name);
@@ -38,7 +34,6 @@ $(function () {
     // Show the modal with the best match
     $('#results-modal').modal('show');
   }
-
 
 
   /**
@@ -92,12 +87,6 @@ $(function () {
 // AJAX post the data to the employees API.
 $.post('/api/employees', newSurvey, displayModal);
 
-
-    // $.ajax({
-    //   method: 'POST',
-    //   url: 'api/employees',
-    //   data: newSurvey
-    // })
   } else {
 
     // Display an error alert if the form is not valid
